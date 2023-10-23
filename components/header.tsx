@@ -5,20 +5,25 @@ import whiteLogo from "@/public/white-logo.png";
 
 const Header = (props: ComponentProps<"header">) => {
     return (
-        <header className="flex justify-between items-center px-10 w-full h-20 bg-[var(--blue-primary)] border-b-4 border-[var(--blue-secondary)]">
-            <Link href="/">
+        <header className="flex justify-between items-start p-10 w-full">
+            <Link href="/" className="bg-primary p-3 rounded-xl shadow-lg border border-gray-300">
                 <Image src={whiteLogo} alt="Logo do Brutus" className="w-auto h-10" />
             </Link>
             <nav>
-                <ul className="flex gap-10 items-center text-white">
+                <ul className="flex gap-10 items-center text-[var(--text)] font-bold">
                     <li>
                         <Link href="">
-                            SOBRE
+                            Sobre
                         </Link>
                     </li>
                     <li>
                         <Link href="">
-                            UNIFACOL
+                            Extensão
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="">
+                            Unifacol
                         </Link>
                     </li>
                 </ul>
